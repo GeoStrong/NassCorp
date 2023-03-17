@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corp</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <header class=" header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    Nasscorp
+                </div>
+                <div class="header__wrapper">
+                    <ul class="header__list list-reset">
+                        <li class="header__item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#">
+                                Product
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#">
+                                Price
+                            </a>
+                        </li>
+                        <li class="header__item header__item--last">
+                            <a href="#contacts">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-list__buttons">
+                        <div class="header__search">
+                            <input type="text" class="header__search--bar">
+                            <button class="header-search__close btn-reset">
+                                <svg class="header__svg header__svg--close" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="none" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="header__btn header__btn--search btn-reset">
+                            <svg class="header__svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.4601 10.3185L15.7639 14.6223C15.9151 14.7737 16.0001 14.979 16 15.193C15.9999 15.407 15.9148 15.6122 15.7635 15.7635C15.6121 15.9147 15.4068 15.9997 15.1928 15.9996C14.9788 15.9995 14.7736 15.9144 14.6223 15.7631L10.3185 11.4593C9.03194 12.4558 7.41407 12.9247 5.79403 12.7707C4.17398 12.6167 2.67346 11.8513 1.59771 10.6302C0.521957 9.40911 -0.0482098 7.82408 0.00319691 6.19754C0.0546036 4.57101 0.723722 3.02514 1.87443 1.87443C3.02514 0.723722 4.57101 0.0546036 6.19754 0.00319691C7.82408 -0.0482098 9.40911 0.521957 10.6302 1.59771C11.8513 2.67346 12.6167 4.17398 12.7707 5.79403C12.9247 7.41407 12.4558 9.03194 11.4593 10.3185H11.4601ZM6.4003 11.1993C7.67328 11.1993 8.89412 10.6936 9.79425 9.79345C10.6944 8.89332 11.2001 7.67248 11.2001 6.3995C11.2001 5.12652 10.6944 3.90568 9.79425 3.00554C8.89412 2.10541 7.67328 1.59972 6.4003 1.59972C5.12732 1.59972 3.90648 2.10541 3.00634 3.00554C2.10621 3.90568 1.60052 5.12652 1.60052 6.3995C1.60052 7.67248 2.10621 8.89332 3.00634 9.79345C3.90648 10.6936 5.12732 11.1993 6.4003 11.1993V11.1993Z"
+                                    fill="" />
+                            </svg>
+                        </button>
+                        <button class="header__btn header__btn--basket btn-reset">
+                            <svg class="header__svg" width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_964_18482)">
+                                    <path
+                                        d="M5.33327 14.9336C5.92237 14.9336 6.39993 14.4561 6.39993 13.867C6.39993 13.2779 5.92237 12.8003 5.33327 12.8003C4.74416 12.8003 4.2666 13.2779 4.2666 13.867C4.2666 14.4561 4.74416 14.9336 5.33327 14.9336Z"
+                                        fill="" />
+                                    <path
+                                        d="M12.8001 14.9336C13.3892 14.9336 13.8667 14.4561 13.8667 13.867C13.8667 13.2779 13.3892 12.8003 12.8001 12.8003C12.211 12.8003 11.7334 13.2779 11.7334 13.867C11.7334 14.4561 12.211 14.9336 12.8001 14.9336Z"
+                                        fill="" />
+                                    <path
+                                        d="M14.9333 2.66678H3.104L2.66667 0.426775C2.64173 0.304495 2.57471 0.19483 2.47726 0.11687C2.37981 0.0389102 2.25811 -0.00240773 2.13333 0.000108501H0V1.06678H1.696L3.73333 11.3068C3.75827 11.4291 3.82529 11.5387 3.92274 11.6167C4.02019 11.6946 4.1419 11.736 4.26667 11.7334H13.8667V10.6668H4.704L4.26667 8.53344H13.8667C13.99 8.53646 14.1105 8.49665 14.2077 8.4208C14.305 8.34496 14.3729 8.23775 14.4 8.11744L15.4667 3.31744C15.4845 3.23831 15.4841 3.15614 15.4655 3.07719C15.4468 2.99824 15.4103 2.9246 15.3589 2.86185C15.3075 2.79911 15.2424 2.74893 15.1687 2.71512C15.0949 2.68132 15.0144 2.66478 14.9333 2.66678ZM13.44 7.46678H4.064L3.31733 3.73344H14.2667L13.44 7.46678Z"
+                                        fill="" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_964_18482">
+                                        <rect width="16" height="14.9334" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__burger">
+                <div class="header-burger__open">
+                </div>
+                <button class="btn-reset header-burger__btn">
+                    <svg class="header__svg header-burger__svg" width="24" height="14" viewBox="0 0 24 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.571289 0H23.4284V2.28571H0.571289V0ZM6.28557 5.71429H23.4284V8H6.28557V5.71429ZM13.4284 11.4286H23.4284V13.7143H13.4284V11.4286Z"
+                            fill="" />
+                    </svg>
+                </button>
+                <button class="btn-reset header-burger__close">
+                    <svg class="header__svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291"
+                            transform="rotate(45 8.9541 7.30432)" fill="" />
+                        <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291"
+                            transform="rotate(-45 7.30469 15.5524)" fill="" />
+                    </svg>
+                </button>
+            </div>
+            <div class="header__content">
+                <div class="header-content__main">
+                    <h1 class="header__title">
+                        Experts are here solve
+                        your business problem.
+                    </h1>
+                    <p class="header__descr">
+                        We know how large objects will act, but things on a
+                        small scale just do not act that way.
+                    </p>
+                    <div class="header-content__buttons">
+                        <button class="btn-reset btn header-content__btn">
+                            Get Quote Now
+                        </button>
+                        <button class="btn-reset btn header-content__btn header-content__btn--more">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="header__row">
+                    <div class="header__info">
+                        <div class="header__pic">
+                            <img src="./img/users.svg" alt="users">
+                        </div>
+                        <div class="header__data">
+                            <span class="header-data__num">
+                                1.5k
+                            </span>
+                            <p class="header-data__descr">
+                                happy customers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <div class="header__pic">
+                            <img src="./img/case.svg" alt="case">
+                        </div>
+                        <div class="header__data">
+                            <span class="header-data__num">
+                                3k
+                            </span>
+                            <p class="header-data__descr">
+                                cases done
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <div class="header__pic">
+                            <img src="./img/award.svg" alt="">
+                        </div>
+                        <div class="header__data">
+                            <span class="header-data__num">
+                                45
+                            </span>
+                            <p class="header-data__descr">
+                                avard winning
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <div class="header__pic">
+                            <img src="./img/notebook.svg" alt="">
+                        </div>
+                        <div class="header__data">
+                            <span class="header-data__num">
+                                12+
+                            </span>
+                            <p class="header-data__descr">
+                                countries worldwide
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="features section hidden">
+            <div class="container features__container">
+                <div class="features__card">
+                    <div class="features__img">
+                        <img src="./img/toolbox.svg" alt="toolbox">
+                    </div>
+                    <div class="features__content">
+                        <h3 class="feature__title">
+                            Business Growing
+                        </h3>
+                        <p class="feature__descr">
+                            the quick fox jumps
+                            over the lazy dog
+                        </p>
+                        <button class="btn-reset btn feature__btn">
+                            More <span class="feature__img">
+                                <svg class="feature__svg" width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_965_72)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3598 0.694796C11.4217 0.632739 11.4953 0.583503 11.5762 0.549909C11.6572 0.516315 11.744 0.499023 11.8316 0.499023C11.9193 0.499023 12.0061 0.516315 12.087 0.549909C12.168 0.583503 12.2415 0.632739 12.3034 0.694796L16.3017 4.69306C16.3637 4.75496 16.413 4.8285 16.4466 4.90945C16.4802 4.99041 16.4975 5.0772 16.4975 5.16486C16.4975 5.25251 16.4802 5.3393 16.4466 5.42026C16.413 5.50121 16.3637 5.57475 16.3017 5.63665L12.3034 9.63491C12.1783 9.76004 12.0086 9.83034 11.8316 9.83034C11.6547 9.83034 11.485 9.76004 11.3598 9.63491C11.2347 9.50979 11.1644 9.34008 11.1644 9.16312C11.1644 8.98616 11.2347 8.81645 11.3598 8.69132L14.8876 5.16486L11.3598 1.63839C11.2978 1.57649 11.2485 1.50295 11.2149 1.42199C11.1814 1.34103 11.1641 1.25424 11.1641 1.16659C11.1641 1.07894 11.1814 0.992149 11.2149 0.911191C11.2485 0.830233 11.2978 0.756697 11.3598 0.694796V0.694796Z"
+                                            fill="" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.5 5.1654C0.5 4.98867 0.570208 4.81917 0.695178 4.6942C0.820147 4.56923 0.989643 4.49902 1.16638 4.49902H15.1603C15.337 4.49902 15.5065 4.56923 15.6315 4.6942C15.7565 4.81917 15.8267 4.98867 15.8267 5.1654C15.8267 5.34213 15.7565 5.51163 15.6315 5.6366C15.5065 5.76157 15.337 5.83178 15.1603 5.83178H1.16638C0.989643 5.83178 0.820147 5.76157 0.695178 5.6366C0.570208 5.51163 0.5 5.34213 0.5 5.1654Z"
+                                            fill="" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_965_72">
+                                            <rect width="16" height="10" fill="" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="features__card">
+                    <div class="features__img">
+                        <img src="./img/shop.svg" alt="shop">
+                    </div>
+                    <div class="features__content">
+                        <h3 class="feature__title">
+                            Digital Marketing
+                        </h3>
+                        <p class="feature__descr">
+                            the quick fox jumps
+                            over the lazy dog
+                        </p>
+                        <button class="btn-reset btn feature__btn">
+                            More <span class="feature__img">
+                                <svg class="feature__svg" width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_965_72)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3598 0.694796C11.4217 0.632739 11.4953 0.583503 11.5762 0.549909C11.6572 0.516315 11.744 0.499023 11.8316 0.499023C11.9193 0.499023 12.0061 0.516315 12.087 0.549909C12.168 0.583503 12.2415 0.632739 12.3034 0.694796L16.3017 4.69306C16.3637 4.75496 16.413 4.8285 16.4466 4.90945C16.4802 4.99041 16.4975 5.0772 16.4975 5.16486C16.4975 5.25251 16.4802 5.3393 16.4466 5.42026C16.413 5.50121 16.3637 5.57475 16.3017 5.63665L12.3034 9.63491C12.1783 9.76004 12.0086 9.83034 11.8316 9.83034C11.6547 9.83034 11.485 9.76004 11.3598 9.63491C11.2347 9.50979 11.1644 9.34008 11.1644 9.16312C11.1644 8.98616 11.2347 8.81645 11.3598 8.69132L14.8876 5.16486L11.3598 1.63839C11.2978 1.57649 11.2485 1.50295 11.2149 1.42199C11.1814 1.34103 11.1641 1.25424 11.1641 1.16659C11.1641 1.07894 11.1814 0.992149 11.2149 0.911191C11.2485 0.830233 11.2978 0.756697 11.3598 0.694796V0.694796Z"
+                                            fill="" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.5 5.1654C0.5 4.98867 0.570208 4.81917 0.695178 4.6942C0.820147 4.56923 0.989643 4.49902 1.16638 4.49902H15.1603C15.337 4.49902 15.5065 4.56923 15.6315 4.6942C15.7565 4.81917 15.8267 4.98867 15.8267 5.1654C15.8267 5.34213 15.7565 5.51163 15.6315 5.6366C15.5065 5.76157 15.337 5.83178 15.1603 5.83178H1.16638C0.989643 5.83178 0.820147 5.76157 0.695178 5.6366C0.570208 5.51163 0.5 5.34213 0.5 5.1654Z"
+                                            fill="" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_965_72">
+                                            <rect width="16" height="10" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="features__card">
+                    <div class="features__img">
+                        <img src="./img/stats.svg" alt="stats">
+                    </div>
+                    <div class="features__content">
+                        <h3 class="feature__title">
+                            National top 50 firms
+                        </h3>
+                        <p class="feature__descr">
+                            the quick fox jumps
+                            over the lazy dog
+                        </p>
+                        <button class="btn-reset btn feature__btn">
+                            More <span class="feature__img">
+                                <svg class="feature__svg" width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_965_72)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3598 0.694796C11.4217 0.632739 11.4953 0.583503 11.5762 0.549909C11.6572 0.516315 11.744 0.499023 11.8316 0.499023C11.9193 0.499023 12.0061 0.516315 12.087 0.549909C12.168 0.583503 12.2415 0.632739 12.3034 0.694796L16.3017 4.69306C16.3637 4.75496 16.413 4.8285 16.4466 4.90945C16.4802 4.99041 16.4975 5.0772 16.4975 5.16486C16.4975 5.25251 16.4802 5.3393 16.4466 5.42026C16.413 5.50121 16.3637 5.57475 16.3017 5.63665L12.3034 9.63491C12.1783 9.76004 12.0086 9.83034 11.8316 9.83034C11.6547 9.83034 11.485 9.76004 11.3598 9.63491C11.2347 9.50979 11.1644 9.34008 11.1644 9.16312C11.1644 8.98616 11.2347 8.81645 11.3598 8.69132L14.8876 5.16486L11.3598 1.63839C11.2978 1.57649 11.2485 1.50295 11.2149 1.42199C11.1814 1.34103 11.1641 1.25424 11.1641 1.16659C11.1641 1.07894 11.1814 0.992149 11.2149 0.911191C11.2485 0.830233 11.2978 0.756697 11.3598 0.694796V0.694796Z"
+                                            fill="" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.5 5.1654C0.5 4.98867 0.570208 4.81917 0.695178 4.6942C0.820147 4.56923 0.989643 4.49902 1.16638 4.49902H15.1603C15.337 4.49902 15.5065 4.56923 15.6315 4.6942C15.7565 4.81917 15.8267 4.98867 15.8267 5.1654C15.8267 5.34213 15.7565 5.51163 15.6315 5.6366C15.5065 5.76157 15.337 5.83178 15.1603 5.83178H1.16638C0.989643 5.83178 0.820147 5.76157 0.695178 5.6366C0.570208 5.51163 0.5 5.34213 0.5 5.1654Z"
+                                            fill="" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_965_72">
+                                            <rect width="16" height="10" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="features__card features__card--last">
+                    <div class="features__img">
+                        <img src="./img/note.svg" alt="note">
+                    </div>
+                    <div class="features__content">
+                        <h3 class="feature__title feature__title--last">
+                            Digital Marketing
+                        </h3>
+                        <p class="feature__descr feature__descr--last">
+                            the quick fox jumps
+                            over the lazy dog
+                        </p>
+                        <button class="btn-reset btn feature__btn feature__btn--last">
+                            More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section hidden">
+            <div class="container about__container">
+                <div class="about__intro">
+                    <h2 class="title">
+                        We are providing best
+                        business service.
+                    </h2>
+                    <p class="descr">
+                        Problems trying to resolve the conflict between the two major realms
+                        of Classical physics: Newtonian mechanics
+                    </p>
+                </div>
+                <div class="about__content">
+                    <div class="about__img">
+                        <img src="./img/media.png" alt="">
+                    </div>
+                    <div class="about__info">
+                        <h2 class="title about__title">
+                            Most trusted in
+                            our field
+                        </h2>
+                        <p class="descr about__descr">
+                            Most calendars are designed for teams. Slate
+                            is designed for freelancers who want a
+                            simple way to plan their schedule.
+                        </p>
+                        <div class="about-info__caption">
+                            <div class="about-info__card about-info__card--first">
+                                <div class="about__left">
+                                    <img src="./img/team.svg" alt="team">
+                                </div>
+                                <div class="about__right">
+                                    <h4 class="about-info__title header4">
+                                        the quick fox jumps over the lazy
+                                        dog
+                                    </h4>
+                                    <p class="about-info__descr">
+                                        Things on a very small scale ...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-info__card about-info__card--second">
+                                <div class="about__left">
+                                    <img src="./img/speed.svg" alt="speed">
+                                </div>
+                                <div class="about__right">
+                                    <h4 class="about-info__title header4">
+                                        the quick fox jumps over the lazy
+                                        dog
+                                    </h4>
+                                    <p class="about-info__descr">
+                                        Things on a very small scale ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients section hidden">
+            <div class="clients__container">
+                <div class="clients__content">
+                    <h1 class="title clients__title">
+                        What Clients Say
+                    </h1>
+                    <p class="descr clients__descr">
+                        Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics
+                    </p>
+                </div>
+                <div class="clients__cards">
+                    <div class="clients__card">
+                        <div class="clients__photo">
+                            <img src="./img/person1.png" class="clients__profile" alt="person3">
+                        </div>
+                        <div class="clients__info">
+                            <h3 class="clients-info__title">
+                                Regina Miles
+                            </h3>
+                            <p class="clients__intro position">
+                                Designer
+                            </p>
+                            <div class="clients__stars">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/empty-star.svg" alt="star">
+                            </div>
+                            <p class="clients-info__descr descr">
+                                This proved to be impossible using the traditional
+                                concepts of space and time. Einstein developed a
+                                new view of time first and then space. This proved
+                                to be impossible using the traditional concepts of
+                                space and time. Einstein developed a new view
+                                of time first and then space.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__photo">
+                            <img src="./img/person2.png" class="clients__profile" alt="person2">
+                        </div>
+                        <div class="clients__info">
+                            <h3 class="clients-info__title">
+                                Regina Miles
+                            </h3>
+                            <p class="clients__intro position">
+                                Designer
+                            </p>
+                            <div class="clients__stars">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/empty-star.svg" alt="star">
+                            </div>
+                            <p class="clients-info__descr descr">
+                                This proved to be impossible using the traditional
+                                concepts of space and time. Einstein developed a
+                                new view of time first and then space. This proved
+                                to be impossible using the traditional concepts of
+                                space and time. Einstein developed a new view
+                                of time first and then space.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__photo">
+                            <img src="./img/person3.png" class="clients__profile" alt="person3">
+                        </div>
+                        <div class="clients__info">
+                            <h3 class="clients-info__title">
+                                Regina Miles
+                            </h3>
+                            <p class="clients__intro position">
+                                Designer
+                            </p>
+                            <div class="clients__stars">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/star.svg" alt="star">
+                                <img src="./img/empty-star.svg" alt="star">
+                            </div>
+                            <p class="clients-info__descr descr">
+                                This proved to be impossible using the traditional
+                                concepts of space and time. Einstein developed a
+                                new view of time first and then space. This proved
+                                to be impossible using the traditional concepts of
+                                space and time. Einstein developed a new view
+                                of time first and then space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team section hidden">
+            <div class="container team__container">
+                <div class="team__intro">
+                    <h2 class="title">
+                        Meet Our Team
+                    </h2>
+                    <p class="descr team__descr">
+                        Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics
+                    </p>
+                </div>
+                <div class="team__content">
+                    <div class="team__card">
+                        <div class="team__photo">
+                            <img src="./img/team1.png" alt="team1">
+                            <p class="team__position position">
+                                CO Founder
+                            </p>
+                        </div>
+                        <div class="team__info">
+                            <h4 class="header4">
+                                Avie Beaton
+                            </h4>
+                            <p class="descr">
+                                the quick fox jumps
+                                over the lazy dog
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <div class="team__photo">
+                            <img src="./img/team2.png" alt="team2">
+                            <p class="team__position position">
+                                Consultant
+                            </p>
+                        </div>
+                        <div class="team__info">
+                            <h4 class="header4">
+                                Ben Jonson
+                            </h4>
+                            <p class="descr">
+                                the quick fox jumps
+                                over the lazy dog
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <div class="team__photo">
+                            <img src="./img/team3.png" alt="team3">
+                            <p class="team__position position">
+                                Consultant
+                            </p>
+                        </div>
+                        <div class="team__info">
+                            <h4 class="header4">
+                                Rodney Stratton
+                            </h4>
+                            <p class="descr">
+                                the quick fox jumps
+                                over the lazy dog
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <div class="team__photo">
+                            <img src="./img/team4.png" alt="team4">
+                            <p class="team__position position">
+                                Consultant
+                            </p>
+                        </div>
+                        <div class="team__info">
+                            <h4 class="team-info__title header4">
+                                Ben Jonson
+                            </h4>
+                            <p class="descr">
+                                the quick fox jumps
+                                over the lazy dog
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts section hidden">
+            <div class="container contacts__container">
+                <div class="contacts__intro">
+                    <div class="contacts-intro__left">
+                        <h2 class="title contacts__title">
+                            We Have Branches All
+                            Over The World
+                        </h2>
+                        <p class="descr contacts__descr">
+                            The gradual accumulation of information about atomic and
+                            small-scale behaviour during the first quarter of the 20th
+                            century, which gave some indications about how small things
+                            do behave, produced an increasing confusion which was
+                            Heisenberg, and Born.
+                        </p>
+                    </div>
+                    <div class="contacts-intro__right">
+                        <img src="./img/world.png" alt="world">
+                    </div>
+                </div>
+                <div class="contacts__content">
+                    <div class="contacts__img">
+                        <!-- <img src="./img/contacts.png" alt="contacts"> -->
+                    </div>
+                    <div class="contacts__info">
+                        <h2 class="title contacts-info_title">
+                            Get A Free Quote Here
+                        </h2>
+                        <form action="#" class="contacts__form">
+                            <label for="name" class="contacts__label">
+                                Name
+                            </label>
+                            <input type="text" id="name" class="contacts__element" placeholder="Full Name">
+                            <label for="email" class="contacts__label">
+                                Email
+                            </label>
+                            <input type="email" id="email" class="contacts__element" placeholder="example@gmail.com">
+                            <label for="department" class="contacts__label">
+                                Department
+                            </label>
+                            <select id="department" class="contacts__element contacts__element--select">
+                                <option class="contacts__option" value="0" disabled selected>
+                                    Please Select
+                                </option>
+                                <option class="contacts__option" value="1">
+                                    First
+                                </option>
+                                <option class="contacts__option" value="2">
+                                    Second
+                                </option>
+                            </select>
+                            <label for="time" class="contacts__label">
+                                Time
+                            </label>
+                            <select id="time" class="contacts__element contacts__element--select">
+                                <option class="contacts__option" value="0" disabled selected>
+                                    Please Select
+                                </option>
+                                <option class="contacts__option" value="1">
+                                    10:00
+                                </option>
+                                <option class="contacts__option" value="2">
+                                    12:00
+                                </option>
+                            </select>
+                            <button class="contacts__btn btn-reset">
+                                Book Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__card">
+                    <h3 class="footer__title">
+                        Get In Touch
+                    </h3>
+                    <p class="footer__descr">
+                        the quick fox jumps over the
+                        lazy dog
+                    </p>
+                    <div class="footer_socials">
+                        <a href="https://www.facebook.com/jobava.giorgi5/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM20.268 7.005H18.351C16.848 7.005 16.557 7.719 16.557 8.769V11.082H20.145L19.677 14.703H16.557V24H12.816V14.706H9.687V11.082H12.816V8.412C12.816 5.313 14.709 3.624 17.475 3.624C18.801 3.624 19.938 3.723 20.271 3.768V7.005H20.268Z"
+                                    fill="#335BF5" />
+                            </svg>
+
+                        </a>
+                        <a href="https://www.instagram.com/gio.jobava_/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0016 5.84744C8.59659 5.84744 5.84859 8.59544 5.84859 12.0004C5.84859 15.4054 8.59659 18.1534 12.0016 18.1534C15.4066 18.1534 18.1546 15.4054 18.1546 12.0004C18.1546 8.59544 15.4066 5.84744 12.0016 5.84744ZM12.0016 15.9994C9.79959 15.9994 8.00259 14.2024 8.00259 12.0004C8.00259 9.79844 9.79959 8.00144 12.0016 8.00144C14.2036 8.00144 16.0006 9.79844 16.0006 12.0004C16.0006 14.2024 14.2036 15.9994 12.0016 15.9994ZM18.4066 4.16144C17.6116 4.16144 16.9696 4.80344 16.9696 5.59844C16.9696 6.39344 17.6116 7.03544 18.4066 7.03544C19.2016 7.03544 19.8436 6.39644 19.8436 5.59844C19.8438 5.40966 19.8068 5.22269 19.7347 5.04824C19.6626 4.87379 19.5567 4.71528 19.4232 4.5818C19.2897 4.44831 19.1312 4.34247 18.9568 4.27034C18.7823 4.19821 18.5954 4.1612 18.4066 4.16144V4.16144ZM23.9956 12.0004C23.9956 10.3444 24.0106 8.70344 23.9176 7.05044C23.8246 5.13044 23.3866 3.42644 21.9826 2.02244C20.5756 0.615437 18.8746 0.180437 16.9546 0.0874372C15.2986 -0.00556279 13.6576 0.00943725 12.0046 0.00943725C10.3486 0.00943725 8.70759 -0.00556279 7.05459 0.0874372C5.13459 0.180437 3.43059 0.618437 2.02659 2.02244C0.619588 3.42944 0.184588 5.13044 0.0915876 7.05044C-0.0014124 8.70644 0.0135876 10.3474 0.0135876 12.0004C0.0135876 13.6534 -0.0014124 15.2974 0.0915876 16.9504C0.184588 18.8704 0.622588 20.5744 2.02659 21.9784C3.43359 23.3854 5.13459 23.8204 7.05459 23.9134C8.71059 24.0064 10.3516 23.9914 12.0046 23.9914C13.6606 23.9914 15.3016 24.0064 16.9546 23.9134C18.8746 23.8204 20.5786 23.3824 21.9826 21.9784C23.3896 20.5714 23.8246 18.8704 23.9176 16.9504C24.0136 15.2974 23.9956 13.6564 23.9956 12.0004V12.0004ZM21.3556 19.0744C21.1366 19.6204 20.8726 20.0284 20.4496 20.4484C20.0266 20.8714 19.6216 21.1354 19.0756 21.3544C17.4976 21.9814 13.7506 21.8404 12.0016 21.8404C10.2526 21.8404 6.50259 21.9814 4.92459 21.3574C4.37859 21.1384 3.97059 20.8744 3.55059 20.4514C3.12759 20.0284 2.86359 19.6234 2.64459 19.0774C2.02059 17.4964 2.16159 13.7494 2.16159 12.0004C2.16159 10.2514 2.02059 6.50144 2.64459 4.92344C2.86359 4.37744 3.12759 3.96944 3.55059 3.54944C3.97359 3.12944 4.37859 2.86244 4.92459 2.64344C6.50259 2.01944 10.2526 2.16044 12.0016 2.16044C13.7506 2.16044 17.5006 2.01944 19.0786 2.64344C19.6246 2.86244 20.0326 3.12644 20.4526 3.54944C20.8756 3.97244 21.1396 4.37744 21.3586 4.92344C21.9826 6.50144 21.8416 10.2514 21.8416 12.0004C21.8416 13.7494 21.9826 17.4964 21.3556 19.0744Z"
+                                    fill="#E61F5A" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.0004 2.46548C23.1188 2.85141 22.1594 3.12917 21.1711 3.23735C22.1971 2.61879 22.9655 1.64156 23.332 0.489007C22.3692 1.07022 21.3145 1.47778 20.2146 1.6936C19.7549 1.19488 19.1989 0.797581 18.5813 0.526453C17.9636 0.255325 17.2976 0.116179 16.6247 0.117688C13.902 0.117688 11.7123 2.3573 11.7123 5.10564C11.7123 5.49158 11.7584 5.87752 11.8333 6.24884C7.7565 6.03248 4.12048 4.05601 1.7032 1.0299C1.26274 1.79335 1.03193 2.66261 1.03477 3.54727C1.03477 5.27814 1.902 6.80435 3.22444 7.70195C2.44511 7.6708 1.68402 7.45342 1.00308 7.06749V7.12889C1.00308 9.5527 2.69143 11.5613 4.94161 12.0233C4.51912 12.1347 4.08449 12.1916 3.64797 12.1929C3.32817 12.1929 3.02565 12.1607 2.72024 12.1168C3.34257 14.0933 5.15482 15.5289 7.3128 15.5757C5.62444 16.9177 3.50968 17.7071 1.2134 17.7071C0.801397 17.7071 0.421085 17.6925 0.0263672 17.6457C2.20452 19.0637 4.78891 19.8824 7.5721 19.8824C16.6074 19.8824 21.5514 12.2864 21.5514 5.69332C21.5514 5.47696 21.5514 5.2606 21.537 5.04424C22.4936 4.33377 23.332 3.45371 24.0004 2.46548Z"
+                                    fill="#21A6DF" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.4699 2.93166C23.3335 2.3987 23.0663 1.91276 22.6951 1.52249C22.324 1.13221 21.8619 0.851291 21.355 0.707834C19.4884 0.176636 11.9879 0.176636 11.9879 0.176636C11.9879 0.176636 4.48729 0.176636 2.62071 0.707834C2.11385 0.851291 1.65172 1.13221 1.28057 1.52249C0.90941 1.91276 0.642248 2.3987 0.50582 2.93166C0.157288 4.93335 -0.0118455 6.96501 0.000644257 8.99993C-0.0118455 11.0348 0.157288 13.0665 0.50582 15.0682C0.642248 15.6012 0.90941 16.0871 1.28057 16.4774C1.65172 16.8676 2.11385 17.1486 2.62071 17.292C4.48729 17.8232 11.9879 17.8232 11.9879 17.8232C11.9879 17.8232 19.4884 17.8232 21.355 17.292C21.8619 17.1486 22.324 16.8676 22.6951 16.4774C23.0663 16.0871 23.3335 15.6012 23.4699 15.0682C23.8184 13.0665 23.9876 11.0348 23.9751 8.99993C23.9876 6.96501 23.8184 4.93335 23.4699 2.93166ZM9.59041 12.7813V5.21852L15.8152 8.99993L9.59041 12.7813Z"
+                                    fill="#E42F08" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__card">
+                    <h3 class="footer__title">
+                        Company info
+                    </h3>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            About Us
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Carrier
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            We are hiring
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Blog
+                        </a>
+                    </p>
+                </div>
+                <div class="footer__card">
+                    <h3 class="footer__title">
+                        Features
+                    </h3>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Business Marketing
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            User Analytic
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Live Chat
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Unlimited Support
+                        </a>
+                    </p>
+                </div>
+                <div class="footer__card">
+                    <h3 class="footer__title">
+                        Resources
+                    </h3>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            IOS & Android
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Watch a Demo
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            Customers
+                        </a>
+                    </p>
+                    <p class="footer__tabs">
+                        <a href="#" class="footer__links">
+                            API
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <p class="footer__tabs footer__tabs--rights">
+                All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

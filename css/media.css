@@ -1,0 +1,346 @@
+@media(min-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+
+    .header__svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media(max-width:1366px) {
+    .feature__svg {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header__logo {
+        font-size: 3rem;
+    }
+
+    .header__list {
+        font-size: 1.2rem;
+    }
+
+    .header__search--bar {
+        top: 0rem;
+    }
+
+    .header-search__close {
+        right: 7.5rem;
+        top: -0rem;
+    }
+
+    .header__svg {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__intro {
+        padding: 0;
+    }
+
+    .about__info {
+        width: auto;
+    }
+
+    .about__info, .about__title, .about__descr {
+        text-align: center;
+    }
+
+    .about-info__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__img, .about__img img {
+        width: 100%;
+    }
+
+    .contacts {
+        margin-bottom: 35rem;
+    }
+
+    .contacts__img {
+        flex: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__list--active {
+        gap: 5rem;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .contacts {
+        margin-bottom: 44rem;
+    }
+}
+
+@media(max-width:576px) {
+    html {
+        font-size: 7px;
+    }
+
+    .contacts {
+        margin-bottom: 55rem;
+    }
+}
+
+@media(max-width:480px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .descr {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .header4 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1.625rem 3.25rem;
+        font-size: 1.5rem;
+    }
+
+    .position {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .header {
+        height: auto;
+        background-size: auto;
+    }
+
+    .header-content__main {
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+
+    .header__search--bar {
+        top: 4rem;
+        left: -30rem;
+        width: 40vw;
+        height: 3rem;
+    }
+
+    .header-search__close {
+        right: 5.5rem;
+        top: 4.5rem;
+    }
+
+    .header-content__buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem
+    }
+
+    .header__row {
+        flex-direction: column;
+        gap: 2rem;
+        background-color: transparent;
+    }
+
+    .header__info {
+        justify-content: space-evenly;
+        padding: 2rem 0;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .header-data__num {
+        font-size: 2.5rem;
+    }
+
+    .header-data__descr {
+        font-size: 1.2rem;
+    }
+
+    .header__list--active {
+        padding-left: 3rem;
+    }
+
+    .header-burger__btn {
+        top: -2.2rem;
+    }
+
+    .header-burger__close {
+        left: 96%;
+    }
+
+    .features__container {
+        flex-direction: column;
+    }
+
+    .features__card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__title {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .feature__descr {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .feature__btn {
+        padding: 1.2rem 3rem;
+    }
+
+    .about-info__descr {
+        margin-top: 2rem;
+        font-size: 1.875rem;
+    }
+
+    .clients__cards {
+        flex-direction: column;
+    }
+
+    .clients__card {
+        width: 60vw;
+    }
+
+    .clients-info__title {
+        margin-bottom: 1.5rem;
+        font-size: 1.9rem;
+    }
+
+    .team__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .team__card {
+        width: auto;
+    }
+
+    .contacts {
+        margin-bottom: 10rem;
+        height: auto;
+    }
+
+    .contacts__container {
+        width: 100vw;
+    }
+
+    .contacts__intro {
+        display: block;
+        padding: 6.2rem 5rem;
+    }
+
+    .contacts-intro__left {
+        width: auto;
+        margin-bottom: 5rem;
+    }
+
+    .contacts__title {
+        margin-bottom: 2rem;
+    }
+
+    .contacts-intro__right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__content {
+        display: block;
+        width: 100%;
+    }
+
+    .contacts__img {
+        width: 100%;
+        height: 43rem;
+        background-image: url(../img/contacts-mobile.png);
+    }
+
+    .contacts__form {
+        gap: 2rem;
+    }
+
+    .contacts__label {
+        font-size: 1.875rem;
+    }
+
+    .contacts__element {
+        font-size: 1.875rem;
+    }
+
+    .contacts__btn {
+        padding: 2.5rem 0;
+        font-size: 1.875rem;
+        border-radius: 5px;
+    }
+
+    .footer__content {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__card {
+        margin-bottom: 5rem;
+    }
+
+    .footer__title {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .footer__descr {
+        margin-bottom: 2rem;
+        font-size: 1.875rem;
+    }
+
+    .footer_socials {
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    .footer__tabs {
+        margin-bottom: 2rem;
+        font-size: 1.875rem;
+    }
+}
