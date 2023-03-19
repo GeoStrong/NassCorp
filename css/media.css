@@ -92,6 +92,8 @@
 
     .header__list {
         display: none;
+        font-size: 2rem;
+        padding: 4rem;
     }
 
     .header__list--active {
@@ -343,4 +345,15 @@
         margin-bottom: 2rem;
         font-size: 1.875rem;
     }
+}
+
+@media(max-width:360px) {
+    .header__search--bar {
+        left: -20rem;
+    }
+
+    .header-search__close {
+        right: 4.5rem;
+    }
+
 }

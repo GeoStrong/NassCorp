@@ -228,6 +228,7 @@ body {
 
 .header__burger {
     position: relative;
+    display: none;
 }
 
 .header-burger__open {

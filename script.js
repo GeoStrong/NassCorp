@@ -13,11 +13,17 @@ const burgerOpen = document.querySelector('.header-burger__open');
 const burgerClose = document.querySelector('.header-burger__close');
 const overlay = document.querySelector('.overlay');
 const allSections = document.querySelectorAll('.section');
+const width = document.documentElement.clientWidth;
 
 const searchClose = function () {
   searchBar.value = '';
   search.style.display = 'none';
-  list.style.display = 'flex';
+  if (width <= 768) {
+    list.style.display = 'none';
+  } else {
+    list.style.display = 'flex';
+  }
+  console.log(width);
 };
 
 const calcDisplay = function (property) {
@@ -43,6 +49,7 @@ burgerBtn.addEventListener('click', function () {
   burgerBtn.style.display = 'none';
   headerBtns.style.zIndex = '0';
   item.style.margin = '0';
+  list.style.display = 'flex';
   list.classList.add('active');
   body.style.overflowY = 'hidden';
 });
@@ -53,6 +60,7 @@ const closing = function () {
   item.style.marginRight = '2.5rem';
   headerBtns.style.zIndex = '2';
   list.classList.remove('active');
+  list.style.display = 'none';
   body.style.overflowY = 'scroll';
 };
 
