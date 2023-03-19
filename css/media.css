@@ -195,6 +195,10 @@
         font-size: 1.2rem;
     }
 
+    .header__list {
+        gap: 4rem
+    }
+
     .header__list--active {
         padding-left: 3rem;
     }
@@ -348,12 +352,22 @@
 }
 
 @media(max-width:360px) {
+
+    .header__list {
+        padding: 0;
+        gap: 8rem
+    }
+
     .header__search--bar {
         left: -20rem;
     }
 
     .header-search__close {
         right: 3.5rem;
+    }
+
+    .header-burger__close {
+        left: 93%;
     }
 
     .header-burger__open {
