@@ -356,4 +356,8 @@
         right: 3.5rem;
     }
 
+    .header-burger__open {
+        left: 70%;
+        width: 36vw;
+    }
 }
